@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function inesrtionSort(arr){
-            for(let i = 1; i< arr.length; i++){
+        function inesrtionSort(arr) {
+            for (let i = 1; i < arr.length; i++) {
                 let numberToInsert = arr[i];
-                let j = i-1;
-                while(j >=0 && arr[j]> numberToInsert){
-                    arr[j+1] = arr[j];
-                    j = j-1;
+                let j = i - 1;
+                while (j >= 0 && arr[j] > numberToInsert) {
+                    arr[j + 1] = arr[j];
+                    j = j - 1;
 
                 }
-                arr[j+1]=numberToInsert;
+                arr[j + 1] = numberToInsert;
             }
         }
-        const arr = [4,6,2,8,1,9]
+        const arr = [4, 6, 2, 8, 1, 9]
         inesrtionSort(arr)
         console.log(arr)
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
