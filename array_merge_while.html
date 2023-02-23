@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = [1,3,5,7,9,11,13,15]
+        let b = [2,4,6,8,10]
+        let c = []
+        let a1 = 0;
+        let b1 = 0;
+        let c1 = 0;
+        while (a1 < a.length  && b1 < b.length) {
+            if(a[a1] < b[b1])
+            {
+                c[c1] = a[a1]
+                a1++
+            }
+            else{
+                c[c1] = b[b1]
+                b1++
+            }
+            c1++
+        }
+
+        while (a1 < a.length) {
+            c[c1] = a[a1]
+                a1++
+                c1++
+        }
+        console.log(c)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

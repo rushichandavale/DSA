@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let data = [1,2,3,4,5,6,77,8,9]
+        // let item = parseInt( document.getElementById('search').value)
+
+        // for (let i = 0; i < data.length; i++) {
+        //      if(data[i] == item){
+        //         index = i
+        //         break
+        //      }
+        //     }
+        //     console.log(index)
+
+            // console.log(data.indexOf(77))
+            // data.splice(2,1)
+
+            function Search() {
+                let data = [1,2,3,4,5,6,77,8,9]
+        let item = parseInt( document.getElementById('search').value)
+
+                for (let i = 0; i < data.length; i++) {
+                    if (data[i] == item) {
+                        index = i
+                        break
+                    }
+                }
+                console.log(index)
+            }
+    </script>
+</head>
+<body>
+    <input type="text" id="search" placeholder="search element">
+    <button onclick="Search()">Search</button>
+</body>
+</html>

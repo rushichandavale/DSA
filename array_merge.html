@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let data = [1,3,5,7,9]
+        let data2 = [2,4,6,8]
+        let data3 = []
+        for (let i = 0; i < data.length; i++) {
+            data3[i]=data[i]
+        }
+        for(i=0;i<data2.length;i++){
+            data3[data.length+i]=data2[i]
+        }
+        // data3.sort()
+        // data3.reverse()
+        data3 = [...data, ...data2]
+        console.log(data3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
